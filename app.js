@@ -1,15 +1,15 @@
-let attackRadio = document.querySelector("input.option1");
-let tankRadio = document.querySelector("input.option2");
+let tankRadio = document.querySelector("input.option1");
+let attackRadio = document.querySelector("input.option2");
 let supportRadio = document.querySelector("input.option3");
 let finishBtn = document.querySelector("button.finishBtn");
 let result = document.querySelector("h1.result");
 
 finishBtn.addEventListener("click", () => {
-  if (attackRadio.checked) {
-    result.innerText = "你適合玩的位置是:攻擊";
-  }
   if (tankRadio.checked) {
     result.innerText = "你適合玩的位置是:坦克";
+  }
+  if (attackRadio.checked) {
+    result.innerText = "你適合玩的位置是:攻擊";
   }
   if (supportRadio.checked) {
     result.innerText = "你適合玩的位置是:輔助";
@@ -193,7 +193,7 @@ let characters = [
     name: "禪亞塔",
     type: "support",
     picture: "/overwatch2/role/support/Zenyatta.jpg",
-  },  
+  },
 ];
 
 let attackCharacters = [];

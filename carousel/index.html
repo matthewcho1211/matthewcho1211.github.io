@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>鬥陣特攻2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+        aria-label="Third navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Overwatch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gamerole.html">玩法介紹</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >角色介紹</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Tank.html">坦克</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/DPS.html">輸出</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Helper.html"
+                      >補師</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Random.html">幫你選角</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main>
+
+  <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+  <p class="top-pic box-img"><img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt14ae63052d7097c9/632e2018e3c2a2741688ca61/Overwatch2_Wordmark_DKBKGD_zhTW.png" alt="img" width="1050" height="150">
+</p>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette box">
+      <div class="col-md-7 ">
+        <h2 class="featurette-heading fw-normal lh-1">玩法介紹 <span style="color:#f06414;">帶領你進入這奇妙的夢幻世界</span></h2>
+        <p class="lead">一款以團隊為基礎的動作遊戲，玩家將在 5v5 對戰中展開決鬥。
+          在戰場上扮演著總共超過 30 名獨特英雄中的任何一員，前往全球各地作戰吧。
+        贏，是你唯一的目標，上吧，我的英雄。</p>
+        <input type="button"  value="玩法介紹" onclick="location.href='gamerole.html'" class="button">
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/overwatch2/RoleIntroduce.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette box">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1" >角色介紹 <span style="color:#f06414;">全台灣最真實的體驗後心得</span></h2>
+        <p class="lead">向你分析角色的優劣以及使用心得，帶領你直觀的了解各角色的本質。請你各位相信我們的判斷，畢竟，我們是專業的。</p>
+        <input type="button"  value="角色介紹" onclick="location.href='Tank.html'" class="button">
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/overwatch2/PlayRole.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette box">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">幫你選角系統 <span style="color:#f06414;">你可以相信我們，畢竟，我們是專業的</span></h2>
+        <p class="lead">運用最尖端的新科技，分析使用者的心境以及思維模式，並經由巨量運算，推薦每個人建議之角色。</p>
+        <p class="lead">你或許會問"這能有用嗎?"</p>>你可以相信我們，畢竟，我們是專業的。</p>
+        <p class="lead">你又或許會問"這是免費能使用的嗎?"</p>>對的。這全是免費的，為了你們，我們可以不計成本，畢竟我們這麼愛你們。</p>
+        <input type="button"   value="幫你選角" onclick="location.href='Random.html'" class="button">
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/overwatch2/Random.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+     
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+  <video autoplay loop muted class="back" style="opacity: 0.3;">
+    <source src="video/BackgroundVideo.mp4">
+  </video>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>鬥陣特攻2</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      img.characterPic {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+        aria-label="Third navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Overwatch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gamerole.html">玩法介紹</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >角色介紹</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Tank.html">坦克</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/DPS.html">輸出</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Helper.html"
+                      >補師</a
+                    >
+                  </li>
+                </ul>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="Random.html">幫你選角</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+    
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <h1 class="box-title" style="text-align: center; margin-top: 100px; font-size: 72px;">角色介紹-坦克</h1>
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row box">
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/D.Va.jpg"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">D.VA</h2>
+            <p>
+              媽的。誰都不能阻止我玩D.VA，ㄟ嘿嘿(搓手流口水。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/Doomfist.png"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">毀滅拳王</h2>
+            <p>
+              高額的輸出，並且把對手撞來撞去，舒服。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/JunkerQueen.png"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">垃圾鎮女王</h2>
+            <p>
+              輸出同時還能自我回血，加上可以幫敵人上debuff，是個高功能型的坦。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/Orisa.png"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">歐瑞莎</h2>
+            <p>
+              用他的轉啊轉慢慢將敵人轉出邊界，是個兼具輸出的坦。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/Reinhardt.png"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">萊茵哈特</h2>
+            <p>
+              俗話說的好 "當POKER牽著來因走進場，那戰場必定血流成河" 這隻純坦在有資格的人手上，被玩成神。
+              神為什麼是神，那是因為他做了人做不到的事，所以才成為了神。而我大POKER即是這戰場的神。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/Roadhog.jpg"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">攔路豬</h2>
+            <p>
+              高額的自補，使得他可以在戰場中存活並自保很久，你知道我看到他的時候我怎麼想嗎?  "媽的"
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/Sigma.jpg"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">席格瑪</h2>
+            <p>
+              搓著他的ball，在戰場中喊著他的旋律的人，喜歡別人上上下下。對我也知道聽起來很奇怪，但我沒有說謊。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/Winston.png"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">溫斯頓</h2>
+            <p>
+              帶著眼鏡的猩猩，一看就是醫資猴對吧。自帶一個泡泡護盾，有效的保護隊員免受攻擊，自動瞄準的普攻，使他成為很適合新手入門的角色。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/WreckingBall.png"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">火爆鋼球</h2>
+            <p>
+              誰沒有個玩彈珠台的夢，沒問題現在鬥陣幫你實現。蛤，你說他怎麼坦怎麼輸出，拜託至少玩彈珠台很快樂對吧，對吧。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              src="/overwatch2/role/tank/Zarya.jpg"
+              alt=""
+              class="characterPic"
+            />
+            <h2 class="fw-normal">札莉亞</h2>
+            <p>
+              媽的，破幹角色，技能哪個腦弱想的，要不乾脆來一隻黑暗大法師算了。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" />
+
+        <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2017–2022 Company, Inc. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <video autoplay loop muted class="back" style="opacity: 0.3">
+    <source src="video/BackgroundVideo.mp4" />
+  </video>
+</html>

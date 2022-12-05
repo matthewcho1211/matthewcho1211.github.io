@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>鬥陣特攻2</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;  
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      label.form-check-label {
+        font-size: 1.5rem;
+      }
+
+      div.form-check {
+        vertical-align: middle;
+      }
+
+      input.form-check-input {
+        margin-top: 10px;
+      }
+
+      img.characterType {
+        width: 700px;
+      }
+      button {
+        width: 70px;
+        margin: 2rem 2rem;
+      }
+      img.randomCharacter {
+        width: 400px;
+        height: 400px;
+        transition: all ease-out 0.8s;
+      }
+
+      img.randomCharacter:hover {
+        transform: scale(1.1);
+      }
+
+      button.chooseBtn {
+        width: 150px;
+        height: 100px;
+        font-size: 2rem;
+      }
+
+      hr.featurette-divider {
+        margin: 10px 0px;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+        aria-label="Third navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Overwatch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gamerole.html">玩法介紹</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >角色介紹</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Tank.html">坦克</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/DPS.html">輸出</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Helper.html"
+                      >補師</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Random.html">幫你選角</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <hr class="featurette-divider" />
+      <div class="row">
+        <div class="col-6">
+          <div class="mx-4 container">
+            <h1>你喜歡:</h1>
+            <div class="form-check">
+              <input
+                class="form-check-input option1"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                站在隊伍的最前面，為隊友扛子彈，並衝鋒陷陣。
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input option2"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                穩定的製造大量傷害，或是像一個刺客去擊殺對面重要角色。
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input option3"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault3"
+              />
+              <label class="form-check-label" for="flexRadioDefault3">
+                適時地輔助隊友，幫助隊友補血，讓隊友有一個良好的輸出空間。
+              </label>
+            </div>
+            <button type="button" class="my-4 btn btn-primary finishBtn">
+              完成
+            </button>
+            <h1 class="result">你適合玩的位置是:</h1>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <img
+            class="characterType"
+            src="/overwatch2/characterType.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="container d-flex justify-content-center">
+        <div class="d-flex flex-column">
+          <h1>不知道要玩誰嗎，我們幫你選!</h1>
+          <div class="d-flex justify-content-center">
+            <div class="d-flex flex-row">
+              <button
+                type="button"
+                class="my-4 btn btn-danger attackBtn chooseBtn"
+              >
+                攻擊
+              </button>
+              <button
+                type="button"
+                class="my-4 btn btn-success tankBtn chooseBtn"
+              >
+                坦克
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="d-flex flex-row">
+              <button
+                type="button"
+                class="my-1 btn btn-warning supportBtn chooseBtn"
+              >
+                輔助
+              </button>
+              <button
+                type="button"
+                class="my-1 btn btn-primary allBtn chooseBtn"
+              >
+                全部
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <h1 class="resultCharacter">角色</h1>
+          </div>
+
+          <div class="mt-3 d-flex justify-content-center randomCharacter">
+            <img
+              class="randomCharacter"
+              id="randomCharacter"
+              src="/overwatch2/role/tank/D.Va.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2017–2022 Company, Inc. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+  <video autoplay loop muted class="back" style="opacity: 0.3">
+    <source src="video/BackgroundVideo.mp4" />
+  </video>
+</html>

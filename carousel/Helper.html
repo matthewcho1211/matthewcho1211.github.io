@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>鬥陣特攻2</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      img.characterPic {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+        aria-label="Third navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Overwatch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gamerole.html">玩法介紹</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >角色介紹</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Tank.html">坦克</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/DPS.html">輸出</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Helper.html"
+                      >補師</a
+                    >
+                  </li>
+                </ul>
+                <li class="nav-item">
+                <a class="nav-link" href="Random.html">幫你選角</a>
+              </li>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <h1 class="box-title" style="text-align: center; margin-top: 100px; font-size: 72px;">角色介紹-輔助</h1>
+
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="container marketing">
+          <!-- Three columns of text below the carousel -->
+          <div class="row box">
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Mercy.jpg"
+                alt=""
+                srcset=""
+              />
+  
+              <h2 class="fw-normal">慈悲</h2>
+              <p>
+               玩得好給你巨量奶，玩不好等著看他的小手槍。
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Lucio.jpg"
+                alt=""
+              />
+  
+              <h2 class="fw-normal">路西歐</h2>
+              <p>
+                "注意看，有蟑螂在爬"是一隻顏色正確的蟑螂，時不時就把人退下懸崖，媽的孤兒。
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Ana.jpg"
+                alt=""
+              />
+  
+              <h2 class="fw-normal">安娜</h2>
+              <p>
+                "這裡這裡，補我安娜，你他媽可不可以射準一點阿，耖，快點媽的，趕緊的"——2022by全體玩家，玩得好有補有輸出，玩不好，呵。
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Baptiste.jpg"
+                alt=""
+              />
+  
+              <h2 class="fw-normal">巴帝斯特</h2>
+              <p>
+                可以很準狠補，大絕可以改善隊友的破槍法，玩得好可以讓對手，饞你的巴帝斯特。
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Brigitte.png"
+                alt=""
+              />
+  
+              <h2 class="fw-normal">碧姬</h2>
+              <p>
+                媽的瘋子。
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Kiriko.png"
+                alt=""
+              />
+  
+              <h2 class="fw-normal">霧子</h2>
+              <p>
+                巨量補，加上瞬間無敵和大招功速加成，使他成為人氣角色，絕對不是因為他太香了。
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Moira.jpg"
+                alt=""
+              />
+  
+              <h2 class="fw-normal">莫伊拉</h2>
+              <p>
+                黃球丟得好，奶量少不了；黃球丟得差，全隊回老家。
+              </p>
+              <p>
+                黑球丟得好，對面選擇跑；黑球丟得差；你家死爹媽。
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img
+                class="characterPic"
+                src="/overwatch2/role/support/Zenyatta.jpg"
+                alt=""
+              />
+  
+              <h2 class="fw-normal">禪亞塔</h2>
+              <p>
+                上你黃球之後就跑路了，活得像個自由的孩子，耖，下次別生了。
+              </p>
+            </div>
+  
+            <!-- /.col-lg-4 -->
+  
+            <!-- /.col-lg-4 -->
+          </div>
+          <!-- /.row -->
+  
+          <!-- START THE FEATURETTES -->
+  
+          <hr class="featurette-divider" />
+  
+          <hr class="featurette-divider" />
+  
+          <!-- /END THE FEATURETTES -->
+        </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2017–2022 Company, Inc. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <video autoplay loop muted class="back" style="opacity: 0.3">
+    <source src="video/BackgroundVideo.mp4" />
+  </video>
+</html>

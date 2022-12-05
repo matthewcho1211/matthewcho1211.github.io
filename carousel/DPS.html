@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.104.2" />
+    <title>鬥陣特攻2</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/carousel/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      img.characterPic {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
+        aria-label="Third navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Overwatch</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gamerole.html">玩法介紹</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >角色介紹</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Tank.html">坦克</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/DPS.html">輸出</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/carousel/Helper.html"
+                      >補師</a
+                    >
+                  </li>
+                </ul>
+                <li class="nav-item">
+                <a class="nav-link" href="Random.html">幫你選角</a>
+              </li>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      
+
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <h1 class="box-title" style="text-align: center; margin-top: 100px; font-size: 72px;">角色介紹-輸出</h1>
+
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row box">
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Ashe.png"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">艾希</h2>
+            <p>
+              有著瞄準鏡，並且自帶手雷的英雄，技能自帶位移，準度決定輸出。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Bastion.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">壁壘機兵</h2>
+            <p>
+              巨量輸出，快速融化對面角色。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Cassidy.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">卡西迪</h2>
+            <p>
+              六發左輪和高額沾黏手雷的輸出，舒服。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Echo.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">迴音</h2>
+            <p>
+              痾，對，看過他，但沒感覺過有他。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Genji.png"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">源氏</h2>
+            <p>
+              你是白癡或對面是白癡。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Hanzo.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">半藏</h2>
+            <p>
+              弓射得好不好，全看你滑鼠按不按得住。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Junkrat.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">炸彈鼠</h2>
+            <p>
+              傻逼。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Mei.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">小美</h2>
+            <p>
+              ㄟ，不是為甚麼我動不了，又哪個傻子玩小美。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Pharah.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">法拉</h2>
+            <p>
+              穩定安全的在空中輸出，但你要是敢配慈悲，就是個不要臉的人。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Reaper.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">死神</h2>
+            <p>
+              拿者兩隻短噴，分分鐘融化坦克。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Sojourn.png"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">索潔恩</h2>
+            <p>
+              高速位移型輸出，各方面都很平衡，玩得好有極高的影響力。
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Soldier76.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">士兵87</h2>
+            <p>
+              跑很快，玩得好可以自保並且有高額輸出，玩不好87。
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Sombra.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">駭影</h2>
+            <p>
+              突然出現於戰場之中，並且在意想不到的情況下擊殺玩家。
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Symmetra.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">辛梅塔</h2>
+            <p>
+              隨處放置的輸出塔成為了他主要的輸出，敵人表示 "媽的!還有"。
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Torbjorn.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">托比昂</h2>
+            <p>
+              幹這王八蛋真他媽的，先不說砲台了，就連普攻都特痛，何況是那王八蛋砲台。
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Tracer.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">閃光</h2>
+            <p>
+              在戰場中七近七出的輸出，走位是他的一切。
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="characterPic"
+              src="/overwatch2/role/attack/Widowmaker.jpg"
+              alt=""
+              srcset=""
+            />
+
+            <h2 class="fw-normal">奪命女</h2>
+            <p>
+              俗話說的好 "戰場上只有奪命女，和被奪命女。" 活不活的了，全看狙擊好不好。
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" />
+
+        <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2017–2022 Company, Inc. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <video autoplay loop muted class="back" style="opacity: 0.3">
+    <source src="video/BackgroundVideo.mp4" />
+  </video>
+</html>

@@ -93,7 +93,12 @@
       img.randomCharacter {
         width: 400px;
         height: 400px;
-        transition: all ease-out 0.8s;
+
+        animation-duration: 0.25s;
+      }
+
+      .animate {
+        animation: scaleUp 0.25s ease forwards;
       }
 
       img.randomCharacter:hover {
@@ -108,6 +113,15 @@
 
       hr.featurette-divider {
         margin: 10px 0px;
+      }
+
+      @keyframes scaleUp {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
       }
     </style>
 

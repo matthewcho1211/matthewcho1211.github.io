@@ -223,12 +223,17 @@ let tankBtn = document.querySelector("button.tankBtn");
 let supportBtn = document.querySelector("button.supportBtn");
 let allBtn = document.querySelector("button.allBtn");
 let resultCharacter = document.querySelector("h1.resultCharacter");
+let randomCharacter = document.getElementById("randomCharacter");
 
 attackBtn.addEventListener("click", () => {
   let choose = Math.floor(Math.random() * attackCharacters.length);
   document.getElementById("randomCharacter").src =
     attackCharacters[choose].picture;
   resultCharacter.innerText = attackCharacters[choose].name;
+  randomCharacter.classList.add("animate");
+  randomCharacter.addEventListener("animationend", () => {
+    randomCharacter.classList.remove("animate");
+  });
 });
 
 tankBtn.addEventListener("click", () => {
@@ -236,6 +241,10 @@ tankBtn.addEventListener("click", () => {
   document.getElementById("randomCharacter").src =
     tankCharacters[choose].picture;
   resultCharacter.innerText = tankCharacters[choose].name;
+  randomCharacter.classList.add("animate");
+  randomCharacter.addEventListener("animationend", () => {
+    randomCharacter.classList.remove("animate");
+  });
 });
 
 supportBtn.addEventListener("click", () => {
@@ -243,10 +252,18 @@ supportBtn.addEventListener("click", () => {
   document.getElementById("randomCharacter").src =
     supportCharacters[choose].picture;
   resultCharacter.innerText = supportCharacters[choose].name;
+  randomCharacter.classList.add("animate");
+  randomCharacter.addEventListener("animationend", () => {
+    randomCharacter.classList.remove("animate");
+  });
 });
 
 allBtn.addEventListener("click", () => {
   let choose = Math.floor(Math.random() * characters.length);
   document.getElementById("randomCharacter").src = characters[choose].picture;
   resultCharacter.innerText = characters[choose].name;
+  randomCharacter.classList.add("animate");
+  randomCharacter.addEventListener("animationend", () => {
+    randomCharacter.classList.remove("animate");
+  });
 });
